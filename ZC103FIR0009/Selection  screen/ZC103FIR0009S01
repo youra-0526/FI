@@ -1,0 +1,12 @@
+``` abap
+*&---------------------------------------------------------------------*
+*& Include          ZC103FIR0009S01
+*&---------------------------------------------------------------------*
+SELECTION-SCREEN BEGIN OF BLOCK pa1 WITH FRAME TITLE TEXT-t01.
+
+  PARAMETERS : pa_bukrs TYPE zc103fit0002-bukrs,
+               pa_gjahr TYPE zc103fit0001-gjahr OBLIGATORY,
+               pa_qua   TYPE int1 AS LISTBOX VISIBLE LENGTH 17 OBLIGATORY
+                          USER-COMMAND pa_qua DEFAULT 1.
+
+SELECTION-SCREEN END OF BLOCK pa1.
